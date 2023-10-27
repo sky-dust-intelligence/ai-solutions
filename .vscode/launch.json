@@ -1,0 +1,8 @@
+// add configuration for debugging with edge vscode //
+ {
+     "type": "edge",
+     "request": "launch",
+     "name": "Launch Edge against localhost",
+     "url": "http://localhost:8080",
+     "webRoot": "${workspaceFolder}"
+ }
