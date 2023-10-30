@@ -49,7 +49,7 @@ const SinglePricing = ({ price }: any) => {
         <h2 className="font-bold text-custom-1 pricing-gradient-text">
           ${" "}
           {(price.unit_amount / 100).toLocaleString("en-US", {
-            currency: "USD",
+            currency: "EUR",
           })}
         </h2>
 
@@ -94,7 +94,7 @@ const SinglePricing = ({ price }: any) => {
       )}
 
       <button
-        aria-label="purchase this plan"
+        aria-label="get this plan"
         onClick={handleSubscription}
         className="mt-11 flex w-full items-center justify-center gap-1.5 font-medium text-white p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button"
       >
@@ -113,7 +113,7 @@ const SinglePricing = ({ price }: any) => {
         </svg>
       </button>
 
-      <p className="mt-4 text-sm text-center">No extra hidden charge</p>
+      <p className="mt-4 text-sm text-center"></p>
 
       {/* <!-- bg shapes --> */}
       <div className="absolute -z-10 pointer-events-none inset-0 overflow-hidden">

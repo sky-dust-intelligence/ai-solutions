@@ -20,8 +20,7 @@ const Faq = () => {
         <SectionTitle
           subTitle="Questions About our AI Tool?"
           title="Frequently Asked Questions"
-          paragraph="Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup."
-        />
+          paragraph="Start your future here, embrace Intelligence and support sustainability"/>
 
         <div className="wow fadeInUp">
           {faqData.map((faq: any, key: number) => (

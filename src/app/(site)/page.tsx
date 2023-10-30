@@ -11,8 +11,8 @@ import Support from "@/components/Support";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Tool - Next.js Template for AI Tools",
-  description: "This is Home for AI Tool",
+  title: "AI Tool - ESG INTELLIGENCE PLATFORM",
+  description: "This is HOME page for ESG INTELLIGENCE PLATFORM",
   // other metadata
 };
 
@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <>
       {/* <NextSeo
-        title="AI Tool - Next.js Template for AI Tools"
-        description="A short description goes here."
+        title="AI Tool - ESG INTELLIGENCE PLATFORM"
+        description="ESG INTELLIGENCE PLATFORM."
       /> */}
       <Hero />
       <Features />

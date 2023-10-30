@@ -3,7 +3,7 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 11,
-    title: "OpenAI Integration",
+    title: "",
     description:
       "Our AI writing tool analyzes your content, suggests improvements",
     icon: "/images/features/icon-01.svg",

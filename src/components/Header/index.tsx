@@ -43,7 +43,6 @@ const Header = () => {
             <Link href="/">
               <Image src={logo} alt="Logo" width={164} height={36} />
             </Link>
-
             <button
               onClick={() => setNavigationOpen(!navigationOpen)}
               className="lg:hidden block"
@@ -85,7 +84,7 @@ const Header = () => {
           <div
             className={`w-full lg:w-3/4 h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${
               navigationOpen
-                ? "!visible bg-dark shadow-lg relative !h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5"
+                ? "!visible bg-light shadow-lg relative !h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5"
                 : ""
             }`}
           >
@@ -107,7 +106,7 @@ const Header = () => {
                         href={`${menuItem.path}`}
                         className={`relative text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient ${
                           pathUrl === menuItem.path
-                            ? "nav-gradient text-white"
+                            ? "nav-gradient text-dark-blue"
                             : "text-white/80"
                         }`}
                       >
