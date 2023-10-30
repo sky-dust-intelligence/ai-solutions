@@ -17,7 +17,7 @@ const SinglePricing = ({ price }: any) => {
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
     window.location.assign(data);
   };

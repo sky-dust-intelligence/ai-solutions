@@ -40,7 +40,7 @@ const SpreadsheetGeneratorPage = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
 
       setGeneratedContent(response.data);

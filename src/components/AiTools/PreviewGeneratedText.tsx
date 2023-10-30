@@ -58,7 +58,7 @@ const PreviewGeneratedText = ({ generatedContent, height }) => {
       <textarea
         className={`bg-dark-7 p-5 border border-white/[0.12] focus:border-white/10 outline-none w-full rounded-lg mt-6 ${
           height === 442 ? "min-h-[442px]" : "min-h-[262px]"
-        } ${generatedContent ? "text-white" : "cursor-no-drop"}`} 
+        } ${generatedContent ? "text-white" : "cursor-no-drop"}`}
         value={
           generatedContent
             ? generatedContent

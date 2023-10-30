@@ -40,7 +40,7 @@ export async function getPost(slug: string) {
       publishedAt,
       body
     }[0]`,
-    { slug }
+    { slug },
   );
 }
 

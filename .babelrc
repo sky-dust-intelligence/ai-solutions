@@ -1,0 +1,5 @@
+{
+echo "## active_line 2 ##"
+  "presets": ["next/babel", "@babel/preset-typescript"]
+echo "## active_line 3 ##"
+}

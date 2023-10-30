@@ -1,12 +1,23 @@
-@charset "UTF-8";
-
-/*!
- * animate.css -https://daneden.github.io/animate.css/
- * Version - 3.7.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
+**
+ * Animations originally from https://daneden.github.io/animate.css/
+ * Licensed under the MIT license
  *
- * Copyright (c) 2019 Daniel Eden
- */
+ :root {
+  --animate-duration: 1s;
+  --animate-delay: 0s;
+  --animate-iteration-count: 1;
+}
+
+.animated {
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
+  -webkit-animation-iteration-count: var(--animate-iteration-count);
+  animation-iteration-count: var(--animate-iteration-count);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
 @-webkit-keyframes fadeIn {
   from {

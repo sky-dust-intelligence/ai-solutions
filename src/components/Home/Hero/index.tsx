@@ -36,21 +36,24 @@ const Hero = () => {
             />
 
             <span className="hero-subtitle-text">
-              Launch Your AI Startup with
+              Start your AI discovery here
             </span>
           </span>
           <h1 className="text-white mb-6 text-3xl font-extrabold sm:text-5xl xl:text-heading-1">
-            OpenAI + Next.js SaaS Boilerplate and Starter Kit
+            AI discovery starts here on SKY DUST ESG INTELLIGENCE PLATFORM
           </h1>
           <p className="max-w-[500px] mx-auto mb-9 font-medium md:text-lg">
-          Ideal for developers looking to build SaaS applications using OpenAI and Next.js, this starter kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup.
+            The ideal starting point for anybody with interest in Artificial
+            Intelligence and not sure how or where AI can help your business
+            forward.
           </p>
 
           <Link
             href="/ai-examples"
             className="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80"
           >
-            Try AI Examples
+            We showcase the current and most common used examples how AI can
+            benefit your business
           </Link>
         </div>
       </div>

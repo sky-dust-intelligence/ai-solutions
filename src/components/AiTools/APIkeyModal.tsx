@@ -51,7 +51,7 @@ const APIkeyModal = ({ handleModal }) => {
             target="_blank"
             className="pt-6 inline-block border-b-[1px] hover:text-white duration-300"
           >
-            Get your API key from OpenAI
+            Get your own API ke
           </a>
         </div>
       </div>

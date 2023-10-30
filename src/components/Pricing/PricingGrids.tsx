@@ -6,7 +6,7 @@ import SinglePricing from "./SInglePricing";
 
 const PricingGrids = () => {
   const [prices, setPrices] = useState([]);
- 
+
   useEffect(() => {
     fetchPrices();
   }, []);

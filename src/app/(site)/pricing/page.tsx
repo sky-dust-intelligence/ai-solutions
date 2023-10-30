@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Pricing | AI Tool - Next.js Template for AI Tools",
-  description: "This is Pricing page for AI Tool",
+  description: "",
   // other metadata
 };
 

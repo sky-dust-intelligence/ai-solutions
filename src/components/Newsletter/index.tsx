@@ -5,10 +5,11 @@ const Newsletter = () => {
         <div className="flex flex-wrap items-center justify-between gap-10">
           <div className="max-w-[352px] w-full">
             <h3 className="font-semibold text-heading-5 text-white mb-2">
-              News & Update
+              The latest news about AI and ESG monthly in your inbox
             </h3>
             <p className="font-medium">
-              Keep up to date with everything about our tool
+              Subscribe now and receive our monthly newsletter with the latest
+              updates on AI and ESG.
             </p>
           </div>
           <div className="max-w-[534px] w-full">

@@ -31,7 +31,9 @@ const Footer = () => {
               </Link>
 
               <p className="mb-12 xl:w-4/5">
-              Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup.
+                Build SaaS AI applications using OpenAI and Next.js, this kit
+                comes with pre-configured and pre-built examples, making it
+                easier to quickly kickstart your AI startup.
               </p>
 
               <div className="flex items-center gap-5">

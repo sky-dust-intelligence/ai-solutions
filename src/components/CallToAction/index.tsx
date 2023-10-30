@@ -52,20 +52,29 @@ const CallToAction = () => {
                 height={16}
               />
 
-              <span className="hero-subtitle-text">Try our tool for Free</span>
+              <span className="hero-subtitle-text">
+                try the most common use cases of AI in business for free
+              </span>
             </span>
             <h2 className="text-white mb-4.5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
-              What are you waiting for?
+              We ensure that your data is safe and secure
             </h2>
             <p className="max-w-[714px] mx-auto font-medium mb-9">
-            Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup.
+              AI which is safe and secure, build responsibly and transparently,
+              to increase your business efficiency, productivity and
+              profitability. AI aimed at solving lacking resources, time,
+              bridging{" "}
+              <thead>
+                knowledge gaps in ESG and Sustainability, reducing risks and
+                costs, and helping you to make better, data-driven decisions.
+              </thead>
             </p>
 
             <Link
               href="/"
               className="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80"
             >
-              Get Started for Free
+              try for free now
             </Link>
           </div>
         </div>

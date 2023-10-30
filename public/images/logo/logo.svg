@@ -10,15 +10,15 @@
 <path d="M163.808 29.619H159.967V6H163.808V29.619Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_478_10567" x1="54" y1="2.73913" x2="2.85828e-06" y2="31.6957" gradientUnits="userSpaceOnUse">
-<stop stop-color="#701EFC"/>
-<stop offset="1" stop-color="#CBB3F3"/>
+<stop stop-color="#1B90EB"/>
+<stop offset="1" stop-color="#FFFFFF"/>
 </linearGradient>
 <linearGradient id="paint1_linear_478_10567" x1="24.6857" y1="15.4284" x2="17.2028" y2="17.4949" gradientUnits="userSpaceOnUse">
-<stop stop-color="#ECE0FF"/>
-<stop offset="1" stop-color="#7C3AED"/>
+<stop stop-color="#FFFFFF"/>
+<stop offset="1" stop-color="#1B90EB"/>
 </linearGradient>
 <linearGradient id="paint2_linear_478_10567" x1="38.0564" y1="20.057" x2="34.0661" y2="14.4033" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7C3AED"/>
+<stop stop-color="#05FC07"/>
 <stop offset="1" stop-color="#ECE0FF"/>
 </linearGradient>
 </defs>
