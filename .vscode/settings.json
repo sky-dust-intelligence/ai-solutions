@@ -1,11 +1,18 @@
 {
-  "css.validate": false,
-  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "cSpell.words": [
-    "Developement",
-    "prefered",
-    "setp",
-    "Swiper"
-  ],
-  "svn.ignoreMissingSvnWarning": true
+    "csstype",
+    "fslightbox",
+    "prismjs",
+    "swiper"
+  ]
 }

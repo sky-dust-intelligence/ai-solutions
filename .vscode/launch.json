@@ -1,8 +1,17 @@
-// add configuration for debugging with edge vscode //
- {
-     "type": "edge",
-     "request": "launch",
-     "name": "Launch Edge against localhost",
-     "url": "http://localhost:8080",
-     "webRoot": "${workspaceFolder}"
- }
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug on localhost:9292",
+      "url": "http://localhost:9292",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${webRoot}/*"
+      },
+      "preLaunchTask": "run-dev" // Add this line
+    }
+  ]
+}
