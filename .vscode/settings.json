@@ -9,13 +9,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": [
-    "csstype",
-    "fslightbox",
-    "prismjs",
-    "swiper"
-  ],
-  "projectManager.git.baseFolders": [
-    "/home/karlotimmerman/"
-  ]
+  "cSpell.words": ["csstype", "fslightbox", "prismjs", "swiper"],
+  "projectManager.git.baseFolders": ["/home/karlotimmerman/"]
 }

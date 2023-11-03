@@ -58,7 +58,9 @@ const CallToAction = () => {
               What are you waiting for?
             </h2>
             <p className="max-w-[714px] mx-auto font-medium mb-9">
-            Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup.
+              Build SaaS AI applications using OpenAI and Next.js, this kit
+              comes with pre-configured and pre-built examples, making it easier
+              to quickly kickstart your AI startup.
             </p>
 
             <Link

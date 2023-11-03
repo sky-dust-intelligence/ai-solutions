@@ -4,10 +4,10 @@ const Newsletter = () => {
       <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
         <div className="flex flex-wrap items-center justify-between gap-10">
           <div className="max-w-[352px] w-full">
-            <h3 className="font-semibold text-heading-5 text-white mb-2">;
-            </h3>
+            <h3 className="font-semibold text-heading-5 text-white mb-2">;</h3>
             <p className="font-medium">
-            "Stay ahead of the bots and be green while you're at it—Your one-stop shop for AI and ESG updates!"
+              "Stay ahead of the bots and be green while you're at it—Your
+              one-stop shop for AI and ESG updates!"
             </p>
           </div>
           <div className="max-w-[534px] w-full">

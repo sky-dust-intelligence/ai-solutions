@@ -56,7 +56,7 @@ const ContentGeneratorPage = () => {
           headers: {
             "Content-Type": "application/json", // Adjust headers as needed
           },
-        }
+        },
       );
       setGeneratedContent(response.data);
       console.log(response.data);

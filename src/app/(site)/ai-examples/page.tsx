@@ -59,7 +59,9 @@ const AiToolPage = () => {
                 alt="icon"
                 className="inline-block mr-2"
               />
-              Note: You need to add an OpenAI API key to try example demos, on production you can add it on .env</p>
+              Note: You need to add an OpenAI API key to try example demos, on
+              production you can add it on .env
+            </p>
             <button
               onClick={isKeyAvailable ? handleRemoveKey : handleModal}
               className="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80 mt-2 lg:mt-0"

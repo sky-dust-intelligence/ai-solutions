@@ -16,7 +16,9 @@ const AboutSection = () => {
               10,000+ Writers, Marketers, & Business owners Love AI Tool.
             </h2>
             <p className="mb-9 font-medium">
-            Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup.
+              Build SaaS AI applications using OpenAI and Next.js, this kit
+              comes with pre-configured and pre-built examples, making it easier
+              to quickly kickstart your AI startup.
             </p>
 
             <a

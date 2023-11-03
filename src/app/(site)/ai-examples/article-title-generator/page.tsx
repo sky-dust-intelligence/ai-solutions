@@ -49,7 +49,7 @@ const ArticleTitleGeneratorPage = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
 
       const cleanedResponse = response.data.replace(/"/g, "");

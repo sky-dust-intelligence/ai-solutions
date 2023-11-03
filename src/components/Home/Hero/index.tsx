@@ -43,7 +43,8 @@ const Hero = () => {
             ESG INTELLIGENCE PLATFORM
           </h1>
           <p className="max-w-[500px] mx-auto mb-9 font-medium md:text-lg">
-          Sustainability, productivity and innovation, the only thing it needs in collaboration
+            Sustainability, productivity and innovation, the only thing it needs
+            in collaboration
           </p>
 
           <Link

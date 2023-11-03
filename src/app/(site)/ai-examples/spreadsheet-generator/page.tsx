@@ -29,7 +29,7 @@ const SpreadsheetGeneratorPage = () => {
       },
     ];
 
-    //for the demo
+    // const.
     const apiKey = localStorage.getItem("apiKey");
 
     try {
@@ -40,7 +40,7 @@ const SpreadsheetGeneratorPage = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
 
       setGeneratedContent(response.data);

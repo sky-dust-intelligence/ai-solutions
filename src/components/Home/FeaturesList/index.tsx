@@ -30,7 +30,10 @@ const FeaturesList = () => {
                         Seamless OpenAI Integration
                       </h3>
                       <p className="font-medium mb-10">
-                      Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup.
+                        Build SaaS AI applications using OpenAI and Next.js,
+                        this kit comes with pre-configured and pre-built
+                        examples, making it easier to quickly kickstart your AI
+                        startup.
                       </p>
                       <Link
                         href="/#"
@@ -135,7 +138,9 @@ const FeaturesList = () => {
                       All Essential SaaS Pages
                     </h3>
                     <p className="font-medium">
-                    Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart.
+                      Build SaaS AI applications using OpenAI and Next.js, this
+                      kit comes with pre-configured and pre-built examples,
+                      making it easier to quickly kickstart.
                     </p>
                   </div>
 
@@ -194,7 +199,8 @@ const FeaturesList = () => {
                       Highly Customizable
                     </h3>
                     <p className="font-medium">
-                    Build SaaS AI applications using OpenAI and Next.js, quickly kickstart your AI startup.
+                      Build SaaS AI applications using OpenAI and Next.js,
+                      quickly kickstart your AI startup.
                     </p>
                   </div>
 

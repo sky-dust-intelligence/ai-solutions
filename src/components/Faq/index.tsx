@@ -20,7 +20,8 @@ const Faq = () => {
         <SectionTitle
           subTitle="Questions About our AI Tool?"
           title="Frequently Asked Questions"
-          paragraph="Start your future here, embrace Intelligence and support sustainability"/>
+          paragraph="Start your future here, embrace Intelligence and support sustainability"
+        />
 
         <div className="wow fadeInUp">
           {faqData.map((faq: any, key: number) => (
