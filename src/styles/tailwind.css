@@ -214,6 +214,23 @@
     );
   }
 
+/* Customizations for Tailwind CSS */
+
+/* Custom background color */
+.bg-custom-green {
+  background-color: #00F815;
+}
+
+/* Text color set to white */
+.text-white {
+  color: #ffffff;
+}
+
+/* Button and Line Highlights with gradient */
+.btn-gradient {
+  background: linear-gradient(to right, #00F815, #ffffff);
+}
+
   .nav-gradient {
     background-image: linear-gradient(
       180deg,
@@ -297,13 +314,13 @@
   .pricing-gradient-text {
     background: -webkit-linear-gradient(
         0deg,
-        #e59cff 0.01%,
-        #ba9cff 50.01%,
-        #9cb2ff 100%
+        #FFFFFF 0.01%,
+        #AAAAAA 50.01%,
+        #1b90eb 100%
       ),
       -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white;
   }
   .pricing-gradient-divider {
     background: linear-gradient(

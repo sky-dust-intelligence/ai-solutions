@@ -1,3 +1,5 @@
+// launch.json file for a typescript, react, nextjs project with tailwind autodebug and prettier. add frontend, backend and full stack debuggger //
+
 {
   "version": "0.2.0",
   "configurations": [
@@ -15,7 +17,7 @@
     }
   ]
 }
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+// Path: .vscode/settings.json
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

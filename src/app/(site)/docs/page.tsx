@@ -1,7 +1,7 @@
 import SidebarLink from "@/components/Docs/SidebarLink";
 import { getAllPosts } from "@/libs/markdown";
 import { Metadata } from "next";
-import BusinessNameGeneratorPage from '../ai-examples/business-name-generator/page';
+import BusinessNameGeneratorPage from "../ai-examples/business-name-generator/page";
 
 export const metadata: Metadata = {
   title: "Docs | ESG INTELLIGENCE PLATFORM",
@@ -31,9 +31,12 @@ export default function DocsPage() {
                 <h1>Welcome to SKY DUST ESG INTELLIGENCE PLATFORM</h1>
 
                 <p className="font-medium">
-                 You are at the place where you can find anything about ESG and how to integrate this into your business. 
-                 The overkill of information is tremendous, the work that needs to be done unduable, but to help you we used AI. 
-                 Here you will learn how to use AI in order to become far more productive, efficient and effective, and esg integrated towards data-driven.
+                  You are at the place where you can find anything about ESG and
+                  how to integrate this into your business. The overkill of
+                  information is tremendous, the work that needs to be done
+                  unduable, but to help you we used AI. Here you will learn how
+                  to use AI in order to become far more productive, efficient
+                  and effective, and esg integrated towards data-driven.
                 </p>
                 <p className="font-medium">
                   Please visit:{" "}
@@ -46,7 +49,6 @@ export default function DocsPage() {
                       nextjstemplates.com/docs
                     </a>
                   </b>{" "}
-                 
                 </p>
               </div>
             </div>
