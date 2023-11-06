@@ -1,0 +1,23 @@
+// launch.json file for a typescript, react, nextjs project with tailwind autodebug and prettier. add frontend, backend and full stack debuggger //
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug on localhost:9292",
+      "url": "http://localhost:9292",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${webRoot}/*"
+      },
+      "preLaunchTask": "run-dev" // Add this line
+    }
+  ]
+}
+// Path: .vscode/settings.json
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },

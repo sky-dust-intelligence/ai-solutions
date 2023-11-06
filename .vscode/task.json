@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "TypeScript Compiler",
+      "type": "shell",
+      "command": "tsc",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}
+{
+  "label": "TSLint Auto Fix",
+  "type": "shell",
+  "command": "tslint --fix",
+  "problemMatcher": "$tslint5",
+  "presentation": {
+    "reveal": "always"
+  }
+}
+{
+  "label": "ESLint Auto Fix",
+  "type": "shell",
+  "command": "eslint --fix",
+  "problemMatcher": "$eslint-stylish",
+  "presentation": {
+    "reveal": "always"
+  }
+}
