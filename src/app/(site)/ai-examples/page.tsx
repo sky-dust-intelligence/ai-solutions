@@ -19,7 +19,7 @@ const AiToolPage = () => {
   };
 
   useEffect(() => {
-    const handleOutsideClick = (event: { target: { closest: (arg0: string) => any; }; }) => {
+    const handleOutsideClick = (event: { target: { closest: (arg0: string) => any } }) => {
       if (isOpen && !event.target.closest('.modal-content')) {
         handleModal();
       }
