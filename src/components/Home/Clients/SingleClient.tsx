@@ -1,5 +1,5 @@
-import { Client } from "@/types/client";
-import Image from "next/image";
+import { Client } from '@/types/client';
+import Image from 'next/image';
 
 const SingleClient = ({ client }: { client: Client }) => {
   return (
@@ -8,7 +8,7 @@ const SingleClient = ({ client }: { client: Client }) => {
         <Image
           src={client.image}
           alt="client"
-          style={{ width: "auto", height: "auto", verticalAlign: "middle" }}
+          style={{ width: 'auto', height: 'auto', verticalAlign: 'middle' }}
           width={80}
           height={36}
         />

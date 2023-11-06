@@ -1,9 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
-import FooterLinkList from "./FooterLinkList";
-import { productsLink, companiesLink, supportsLink } from "./linksData";
+import Link from 'next/link';
+import Image from 'next/image';
+import FooterLinkList from './FooterLinkList';
+import { productsLink, companiesLink, supportsLink } from './linksData';
 
-const logo = "/images/logo/logo.svg";
+const logo = '/images/logo/logo.svg';
 
 interface Link {
   title: string;
@@ -43,17 +43,10 @@ const Footer = () => {
                 </a>
               </Link>
 
-              <p className="mb-12 xl:w-4/5">
-                Build your future of ESG in your business with ESG Intelligt
-                solutions.
-              </p>
+              <p className="mb-12 xl:w-4/5">Build your future of ESG in your business with ESG Intelligt solutions.</p>
 
               <div className="flex items-center gap-5">
-                <a
-                  href="#"
-                  aria-label="facebook"
-                  className="hover:text-white ease-in duration-300"
-                >
+                <a href="#" aria-label="facebook" className="hover:text-white ease-in duration-300">
                   <svg
                     className="fill-current"
                     width="24"
@@ -69,11 +62,7 @@ const Footer = () => {
                   </svg>
                 </a>
 
-                <a
-                  href="#"
-                  aria-label="twitter"
-                  className="hover:text-white ease-in duration-300"
-                >
+                <a href="#" aria-label="twitter" className="hover:text-white ease-in duration-300">
                   <svg
                     className="fill-current"
                     width="24"
@@ -89,11 +78,7 @@ const Footer = () => {
                   </svg>
                 </a>
 
-                <a
-                  href="#"
-                  aria-label="github"
-                  className="hover:text-white ease-in duration-300"
-                >
+                <a href="#" aria-label="github" className="hover:text-white ease-in duration-300">
                   <svg
                     className="fill-current"
                     width="24"
@@ -117,9 +102,7 @@ const Footer = () => {
                 </a>
               </div>
 
-              <p className="font-medium mt-5.5">
-                AI Tool, LLC. All rights reserved.
-              </p>
+              <p className="font-medium mt-5.5">AI Tool, LLC. All rights reserved.</p>
             </div>
 
             <div className="max-w-[571px] w-full">

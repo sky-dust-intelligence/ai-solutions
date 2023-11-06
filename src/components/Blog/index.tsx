@@ -1,7 +1,7 @@
-import { getPosts } from "@/sanity/sanity-utils";
-import { Blog } from "@/types/blog";
-import SectionTitle from "../Common/SectionTitle";
-import SingleBlog from "./SingleBlog";
+import { getPosts } from '@/sanity/sanity-utils';
+import { Blog } from '@/types/blog';
+import SectionTitle from '../Common/SectionTitle';
+import SingleBlog from './SingleBlog';
 
 export default async function BlogSection() {
   const posts = await getPosts();
@@ -16,10 +16,7 @@ export default async function BlogSection() {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
-          {posts.length > 0 &&
-            posts
-              .slice(0, 3)
-              .map((blog: Blog) => <SingleBlog key={blog._id} blog={blog} />)}
+          {posts.length > 0 && posts.slice(0, 3).map((blog: Blog) => <SingleBlog key={blog._id} blog={blog} />)}
         </div>
       </div>
     </section>

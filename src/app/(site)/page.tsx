@@ -1,18 +1,18 @@
-import BlogSection from "@/components/Blog";
-import CallToAction from "@/components/CallToAction";
-import Clients from "@/components/Home/Clients";
-import Features from "@/components/Home/Features";
-import FeaturesList from "@/components/Home/FeaturesList";
-import Hero from "@/components/Home/Hero";
-import Reviews from "@/components/Home/Reviews";
-import Newsletter from "@/components/Newsletter";
-import Pricing from "@/components/Pricing";
-import Support from "@/components/Support";
-import { Metadata } from "next";
+import BlogSection from '@/components/Blog';
+import CallToAction from '@/components/CallToAction';
+import Clients from '@/components/Home/Clients';
+import Features from '@/components/Home/Features';
+import FeaturesList from '@/components/Home/FeaturesList';
+import Hero from '@/components/Home/Hero';
+import Reviews from '@/components/Home/Reviews';
+import Newsletter from '@/components/Newsletter';
+import Pricing from '@/components/Pricing';
+import Support from '@/components/Support';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "AI Tool - ESG INTELLIGENCE PLATFORM",
-  description: "This is HOME page for ESG INTELLIGENCE PLATFORM",
+  title: 'AI Tool - ESG INTELLIGENCE PLATFORM',
+  description: 'This is HOME page for ESG INTELLIGENCE PLATFORM',
   // other metadata
 };
 

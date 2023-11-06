@@ -1,6 +1,6 @@
-import SectionTitle from "@/components/Common/SectionTitle";
-import SingleTeam from "./SingleTeam";
-import teamData from "./teamData";
+import SectionTitle from '@/components/Common/SectionTitle';
+import SingleTeam from './SingleTeam';
+import teamData from './teamData';
 
 const Team = () => {
   return (

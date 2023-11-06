@@ -1,11 +1,5 @@
 const icon1 = (
-  <svg
-    width="25"
-    height="24"
-    viewBox="0 0 25 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clipPath="url(#clip0_67_11301)">
       <path
         d="M24.5 12C24.5 5.37258 19.1274 0 12.5 0C5.87258 0 0.5 5.37258 0.5 12C0.5 18.6274 5.87258 24 12.5 24C19.1274 24 24.5 18.6274 24.5 12Z"
@@ -41,30 +35,11 @@ const icon1 = (
         <feOffset />
         <feGaussianBlur stdDeviation="3" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix
-          type="matrix"
-          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0"
-        />
-        <feBlend
-          mode="normal"
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_67_11301"
-        />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="effect1_dropShadow_67_11301"
-          result="shape"
-        />
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_67_11301" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_67_11301" result="shape" />
       </filter>
-      <linearGradient
-        id="paint0_linear_67_11301"
-        x1="12.5"
-        y1="0"
-        x2="12.5"
-        y2="24"
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="paint0_linear_67_11301" x1="12.5" y1="0" x2="12.5" y2="24" gradientUnits="userSpaceOnUse">
         <stop stopColor="#F3EEFF" stopOpacity="0" />
         <stop offset="1" stopColor="#F3EEFF" />
       </linearGradient>

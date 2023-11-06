@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const AboutSection = () => {
   return (
@@ -8,17 +8,14 @@ const AboutSection = () => {
 
         <div className="flex gap-11 flex-wrap xl:flex-nowrap justify-between">
           <div className="wow fadeInLeft max-w-[570px] w-full">
-            <span className="hero-subtitle-text font-semibold block mb-5">
-              About Our App
-            </span>
+            <span className="hero-subtitle-text font-semibold block mb-5">About Our App</span>
 
             <h2 className="text-white mb-5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
               10,000+ Writers, Marketers, & Business owners Love AI Tool.
             </h2>
             <p className="mb-9 font-medium">
-              Build SaaS AI applications using OpenAI and Next.js, this kit
-              comes with pre-configured and pre-built examples, making it easier
-              to quickly kickstart your AI startup.
+              Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built
+              examples, making it easier to quickly kickstart your AI startup.
             </p>
 
             <a

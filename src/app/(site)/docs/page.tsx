@@ -1,16 +1,16 @@
-import SidebarLink from "@/components/Docs/SidebarLink";
-import { getAllPosts } from "@/libs/markdown";
-import { Metadata } from "next";
-import BusinessNameGeneratorPage from "../ai-examples/business-name-generator/page";
+import SidebarLink from '@/components/Docs/SidebarLink';
+import { getAllPosts } from '@/libs/markdown';
+import { Metadata } from 'next';
+import BusinessNameGeneratorPage from '../ai-examples/business-name-generator/page';
 
 export const metadata: Metadata = {
-  title: "Docs | ESG INTELLIGENCE PLATFORM",
-  description: "knowledge base for esg and intelligence",
+  title: 'Docs | ESG INTELLIGENCE PLATFORM',
+  description: 'knowledge base for esg and intelligence',
   // other metadata
 };
 
 export default function DocsPage() {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
+  const posts = getAllPosts(['title', 'date', 'excerpt', 'coverImage', 'slug']);
   return (
     <>
       <section className="pt-24 pb-16 md:pb-20 lg:pb-24 md:pt-28 lg:pt-32">
@@ -31,24 +31,18 @@ export default function DocsPage() {
                 <h1>Welcome to SKY DUST ESG INTELLIGENCE PLATFORM</h1>
 
                 <p className="font-medium">
-                  You are at the place where you can find anything about ESG and
-                  how to integrate this into your business. The overkill of
-                  information is tremendous, the work that needs to be done
-                  unduable, but to help you we used AI. Here you will learn how
-                  to use AI in order to become far more productive, efficient
-                  and effective, and esg integrated towards data-driven.
+                  You are at the place where you can find anything about ESG and how to integrate this into your
+                  business. The overkill of information is tremendous, the work that needs to be done unduable, but to
+                  help you we used AI. Here you will learn how to use AI in order to become far more productive,
+                  efficient and effective, and esg integrated towards data-driven.
                 </p>
                 <p className="font-medium">
-                  Please visit:{" "}
+                  Please visit:{' '}
                   <b>
-                    <a
-                      className="text-white"
-                      target="_blank"
-                      href="https://efrag.org/lab6"
-                    >
+                    <a className="text-white" target="_blank" href="https://efrag.org/lab6">
                       nextjstemplates.com/docs
                     </a>
-                  </b>{" "}
+                  </b>{' '}
                 </p>
               </div>
             </div>

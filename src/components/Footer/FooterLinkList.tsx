@@ -19,8 +19,8 @@ const FooterLinkList: React.FC<FooterLinkListProps> = ({ title, links }) => {
           <li key={index}>
             <a
               href={link.href}
-              target={link.newTab ? "_blank" : "_self"}
-              rel={link.newTab ? "noopener noreferrer" : ""}
+              target={link.newTab ? '_blank' : '_self'}
+              rel={link.newTab ? 'noopener noreferrer' : ''}
               className="font-medium ease-in duration-300 hover:text-white"
             >
               {link.title}

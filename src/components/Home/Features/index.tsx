@@ -1,13 +1,10 @@
-import SectionTitle from "@/components/Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import SectionTitle from '@/components/Common/SectionTitle';
+import SingleFeature from './SingleFeature';
+import featuresData from './featuresData';
 
 const Features = () => {
   return (
-    <section
-      id="features"
-      className="overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 scroll-mt-17"
-    >
+    <section id="features" className="overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 scroll-mt-17">
       <div className="max-w-[1222px] mx-auto px-4 sm:px-8 xl:px-0">
         <SectionTitle
           subTitle="Main Features"

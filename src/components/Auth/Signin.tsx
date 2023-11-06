@@ -1,27 +1,27 @@
-"use client";
-import { signIn } from "next-auth/react";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import toast from "react-hot-toast";
+'use client';
+import { signIn } from 'next-auth/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const Signin = () => {
   const [data, setData] = useState({
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   });
   const [remember, setRemember] = useState(false);
 
   const loginUser = async (e: any) => {
     e.preventDefault();
 
-    signIn("credentials", { ...data, redirect: false }).then((callback) => {
+    signIn('credentials', { ...data, redirect: false }).then((callback) => {
       if (callback?.error) {
         toast.error(callback.error);
       }
 
       if (callback?.ok && !callback?.error) {
-        toast.success("Logged in successfully");
+        toast.success('Logged in successfully');
       }
     });
   };
@@ -48,16 +48,10 @@ const Signin = () => {
                 <div className="py-8 sm:py-20 pl-8 sm:pl-21 pr-8 sm:pr-20">
                   <div>
                     <button
-                      onClick={() => signIn("google")}
+                      onClick={() => signIn('google')}
                       className="w-full flex items-center justify-center gap-3 p-3.5 font-medium text-white rounded-lg border border-white/[0.12] ease-in duration-300 hover:border-purple"
                     >
-                      <svg
-                        width="23"
-                        height="22"
-                        viewBox="0 0 23 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_132_14584)">
                           <path
                             d="M22.5001 11.2438C22.5134 10.4876 22.4338 9.73256 22.2629 8.995H11.7246V13.0771H17.9105C17.7933 13.7929 17.5296 14.478 17.1352 15.0914C16.7409 15.7047 16.224 16.2335 15.6158 16.646L15.5942 16.7827L18.9264 19.3124L19.1571 19.335C21.2772 17.4161 22.4997 14.5926 22.4997 11.2438"
@@ -78,12 +72,7 @@ const Signin = () => {
                         </g>
                         <defs>
                           <clipPath id="clip0_132_14584">
-                            <rect
-                              width="22"
-                              height="22"
-                              fill="white"
-                              transform="translate(0.5)"
-                            />
+                            <rect width="22" height="22" fill="white" transform="translate(0.5)" />
                           </clipPath>
                         </defs>
                       </svg>
@@ -91,7 +80,7 @@ const Signin = () => {
                     </button>
 
                     <button
-                      onClick={() => signIn("github")}
+                      onClick={() => signIn('github')}
                       className="mt-4 w-full flex items-center justify-center gap-3 p-3.5 font-medium text-white rounded-lg border border-white/[0.12] ease-in duration-300 hover:border-purple"
                     >
                       <svg
@@ -132,9 +121,7 @@ const Signin = () => {
                           type="email"
                           placeholder="Enter your email"
                           value={data.email}
-                          onChange={(e) =>
-                            setData({ ...data, email: e.target.value })
-                          }
+                          onChange={(e) => setData({ ...data, email: e.target.value })}
                           className="w-full border border-white/[0.12] bg-transparent rounded-lg focus:border-purple pl-14.5 pr-4 py-3.5 font-medium outline-none focus-visible:shadow-none text-white"
                         />
                       </div>
@@ -169,9 +156,7 @@ const Signin = () => {
                           type="password"
                           placeholder="Password"
                           value={data.password}
-                          onChange={(e) =>
-                            setData({ ...data, password: e.target.value })
-                          }
+                          onChange={(e) => setData({ ...data, password: e.target.value })}
                           className="w-full border border-white/[0.12] bg-transparent rounded-lg focus:border-purple pl-14.5 pr-4 py-3.5 font-medium outline-none focus-visible:shadow-none text-white"
                         />
                       </div>
@@ -191,16 +176,10 @@ const Signin = () => {
                               />
                               <div
                                 className={`mr-2 flex h-5 w-5 items-center justify-center rounded-md border ${
-                                  remember
-                                    ? "border-purple bg-purple"
-                                    : "border-white/[0.12]"
+                                  remember ? 'border-purple bg-purple' : 'border-white/[0.12]'
                                 }`}
                               >
-                                <span
-                                  className={`${
-                                    remember ? "opacity-100" : "opacity-0"
-                                  }`}
-                                >
+                                <span className={`${remember ? 'opacity-100' : 'opacity-0'}`}>
                                   <svg
                                     width="11"
                                     height="8"
@@ -221,10 +200,7 @@ const Signin = () => {
                             Remember me
                           </label>
                         </div>
-                        <a
-                          href="/#"
-                          className="font-medium text-sm text-purple"
-                        >
+                        <a href="/#" className="font-medium text-sm text-purple">
                           Forgot Password?
                         </a>
                       </div>
@@ -238,7 +214,7 @@ const Signin = () => {
                     </form>
 
                     <p className="text-center font-medium text-white mt-5">
-                      Don{`'`}t have an account?{" "}
+                      Don{`'`}t have an account?{' '}
                       <Link href="/auth/signup" className="text-purple">
                         Sign Up for Free
                       </Link>

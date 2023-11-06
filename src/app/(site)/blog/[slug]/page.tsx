@@ -1,9 +1,9 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-import Breadcrumb from "@/components/Breadcrumb";
-import { getPost, getPosts, imageBuilder } from "@/sanity/sanity-utils";
-import { Blog } from "@/types/blog";
-import { PortableText } from "@portabletext/react";
-import Image from "next/image";
+import SingleBlog from '@/components/Blog/SingleBlog';
+import Breadcrumb from '@/components/Breadcrumb';
+import { getPost, getPosts, imageBuilder } from '@/sanity/sanity-utils';
+import { Blog } from '@/types/blog';
+import { PortableText } from '@portabletext/react';
+import Image from 'next/image';
 
 type Props = {
   params: { slug: string };
@@ -16,21 +16,13 @@ export default async function BlogDetails({ params }: Props) {
 
   return (
     <>
-      <title>
-        {`${
-          post.title || "Blog Details"
-        } | AI Tool - Next.js Template for AI Tools`}
-      </title>
+      <title>{`${post.title || 'Blog Details'} | AI Tool - Next.js Template for AI Tools`}</title>
 
       <Breadcrumb pageTitle="Blog Details" />
 
       <section className="pt-20 lg:pt-25 pb-17.5 lg:pb-22.5 xl:pb-27.5">
         <div className="max-w-[1170px] mb-10 aspect-[390/167] relative w-full mx-auto px-4 sm:px-8 xl:px-0 rounded-2xl overflow-hidden md:rounded-3xl">
-          <Image
-            src={imageBuilder(post?.mainImage).url()}
-            alt={post.title}
-            fill
-          />
+          <Image src={imageBuilder(post?.mainImage).url()} alt={post.title} fill />
         </div>
 
         <div className="max-w-[1170px] w-full mx-auto">
@@ -67,9 +59,7 @@ export default async function BlogDetails({ params }: Props) {
                     />
                   </svg>
 
-                  <span className="text-sm font-medium">
-                    {post?.author?.name}
-                  </span>
+                  <span className="text-sm font-medium">{post?.author?.name}</span>
                 </div>
                 <div className="flex items-center gap-2 flex-wrap cursor-pointer ease-in duration-300 hover:text-white">
                   <svg
@@ -87,19 +77,13 @@ export default async function BlogDetails({ params }: Props) {
                   </svg>
 
                   <span className="text-sm font-medium">
-                    {new Date(post?.publishedAt)
-                      .toDateString()
-                      .split(" ")
-                      .slice(1)
-                      .join(" ")}
+                    {new Date(post?.publishedAt).toDateString().split(' ').slice(1).join(' ')}
                   </span>
                 </div>
               </div>
             </div>
 
-            <h1 className="font-semibold text-white text-[34px] leading-[45px] mb-7.5">
-              {post?.title}
-            </h1>
+            <h1 className="font-semibold text-white text-[34px] leading-[45px] mb-7.5">{post?.title}</h1>
 
             <div className="blog-details mb-12">
               <PortableText value={post?.body} />
@@ -171,10 +155,7 @@ export default async function BlogDetails({ params }: Props) {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
-            {posts.length > 0 &&
-              posts
-                .slice(0, 3)
-                .map((blog: Blog) => <SingleBlog key={blog._id} blog={blog} />)}
+            {posts.length > 0 && posts.slice(0, 3).map((blog: Blog) => <SingleBlog key={blog._id} blog={blog} />)}
           </div>
         </div>
       </section>

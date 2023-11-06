@@ -1,23 +1,16 @@
-import { Review } from "@/types/review";
-import Image from "next/image";
+import { Review } from '@/types/review';
+import Image from 'next/image';
 
 const SingleReview = ({ review }: { review: Review }) => {
   return (
     <div className="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
       <div className="flex items-center gap-4.5">
         <div className="max-w-[48px] w-full h-12 relative rounded-full overflow-hidden">
-          <Image
-            src={review.userImage}
-            alt={review.userName}
-            width={48}
-            height={48}
-          />
+          <Image src={review.userImage} alt={review.userName} width={48} height={48} />
         </div>
         <div>
           <h5 className="text-white text-sm font-medium">{review.userName}</h5>
-          <p className="font-medium text-sm lowercase">
-            {review.userDesignation}
-          </p>
+          <p className="font-medium text-sm lowercase">{review.userDesignation}</p>
         </div>
       </div>
 

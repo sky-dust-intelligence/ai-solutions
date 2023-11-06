@@ -1,12 +1,12 @@
-import Breadcrumb from "@/components/Breadcrumb";
-import Faq from "@/components/Faq";
-import PricingGrids from "@/components/Pricing/PricingGrids";
+import Breadcrumb from '@/components/Breadcrumb';
+import Faq from '@/components/Faq';
+import PricingGrids from '@/components/Pricing/PricingGrids';
 
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Pricing | ESG INTELLIGENCE PLATFORM",
-  description: "This is Pricing page for ESG INTELLIGENCE PLATFORM",
+  title: 'Pricing | ESG INTELLIGENCE PLATFORM',
+  description: 'This is Pricing page for ESG INTELLIGENCE PLATFORM',
   // other metadata
 };
 

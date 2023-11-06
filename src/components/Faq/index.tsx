@@ -1,8 +1,8 @@
-"use client";
-import { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
-import SingleFaq from "./SingleFaq";
-import faqData from "./faqData";
+'use client';
+import { useState } from 'react';
+import SectionTitle from '../Common/SectionTitle';
+import SingleFaq from './SingleFaq';
+import faqData from './faqData';
 
 const Faq = () => {
   const [activeFaq, setActiveFaq] = useState(1);
@@ -25,10 +25,7 @@ const Faq = () => {
 
         <div className="wow fadeInUp">
           {faqData.map((faq: any, key: number) => (
-            <SingleFaq
-              key={key}
-              faqData={{ ...faq, activeFaq, handleFaqToggle }}
-            />
+            <SingleFaq key={key} faqData={{ ...faq, activeFaq, handleFaqToggle }} />
           ))}
         </div>
       </div>

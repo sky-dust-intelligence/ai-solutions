@@ -1,5 +1,5 @@
-import { Team } from "@/types/team";
-import Image from "next/image";
+import { Team } from '@/types/team';
+import Image from 'next/image';
 
 const SingleTeam = ({ team }: { team: Team }) => {
   const { name, designation, image, fbLink, twitterLink, instagramLink } = team;
@@ -7,12 +7,7 @@ const SingleTeam = ({ team }: { team: Team }) => {
   return (
     <div className="wow fadeInUp group text-center">
       <div className="team-img-gradient group-hover:before:gradient-3 max-w-50 mx-auto w-full h-50 rounded-full relative mb-7.5">
-        <Image
-          src={image}
-          alt={name}
-          fill
-          className="rounded-full object-cover object-center"
-        />
+        <Image src={image} alt={name} fill className="rounded-full object-cover object-center" />
       </div>
       <h4 className="text-white font-semibold text-heading-6 mb-2.5">{name}</h4>
       <p className="font-medium mb-6">{designation}</p>
@@ -50,10 +45,7 @@ const SingleTeam = ({ team }: { team: Team }) => {
           </svg>
         </a>
 
-        <a
-          href={instagramLink}
-          className="hover:text-white ease-in duration-300"
-        >
+        <a href={instagramLink} className="hover:text-white ease-in duration-300">
           <svg
             className="fill-current"
             width="22"

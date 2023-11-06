@@ -6,8 +6,7 @@ const Newsletter = () => {
           <div className="max-w-[352px] w-full">
             <h3 className="font-semibold text-heading-5 text-white mb-2">;</h3>
             <p className="font-medium">
-              "Stay ahead of the bots and be green while you're at it—Your
-              one-stop shop for AI and ESG updates!"
+              "Stay ahead of the bots and be green while you're at it—Your one-stop shop for AI and ESG updates!"
             </p>
           </div>
           <div className="max-w-[534px] w-full">

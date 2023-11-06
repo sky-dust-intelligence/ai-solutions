@@ -1,5 +1,5 @@
-import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
+import Image from 'next/image';
+import SectionTitle from '../Common/SectionTitle';
 
 const Support = () => {
   return (
@@ -30,20 +30,10 @@ const Support = () => {
             <span className="absolute w-full h-full bg-[url(/images/blur/blur-19.svg)] bg-no-repeat bg-cover bg-center left-1/2 top-0 -translate-x-1/2 -z-1"></span>
 
             <span className="absolute left-1/2 top-0 -translate-x-1/2 -z-1 w-full aspect-[1170/592]">
-              <Image
-                src="/images/blur/blur-20.svg"
-                alt="blur"
-                fill
-                className="max-w-none"
-              />
+              <Image src="/images/blur/blur-20.svg" alt="blur" fill className="max-w-none" />
             </span>
             <span className="absolute max-w-[530px] w-full mx-auto aspect-[530/254] left-1/2 top-0 -translate-x-1/2 -z-1">
-              <Image
-                src="/images/blur/blur-21.svg"
-                alt="blur"
-                fill
-                className="max-w-none"
-              />
+              <Image src="/images/blur/blur-21.svg" alt="blur" fill className="max-w-none" />
             </span>
           </div>
 
@@ -55,18 +45,11 @@ const Support = () => {
 
           {/* <!-- support form --> */}
           <div className="form-box-gradient relative overflow-hidden rounded-[25px] bg-dark p-6 sm:p-8 xl:p-15">
-            <form
-              action="https://formbold.com/s/unique_form_id"
-              method="POST"
-              className="relative z-10"
-            >
+            <form action="https://formbold.com/s/unique_form_id" method="POST" className="relative z-10">
               <div className="-mx-4 xl:-mx-10 flex flex-wrap">
                 <div className="w-full px-4 xl:px-5 md:w-1/2">
                   <div className="mb-9.5">
-                    <label
-                      htmlFor="name"
-                      className="text-white mb-2.5 block font-medium"
-                    >
+                    <label htmlFor="name" className="text-white mb-2.5 block font-medium">
                       Name
                     </label>
                     <input
@@ -81,10 +64,7 @@ const Support = () => {
                 </div>
                 <div className="w-full px-4 xl:px-5 md:w-1/2">
                   <div className="mb-9.5">
-                    <label
-                      htmlFor="email"
-                      className="text-white mb-2.5 block font-medium"
-                    >
+                    <label htmlFor="email" className="text-white mb-2.5 block font-medium">
                       Email
                     </label>
                     <input
@@ -99,10 +79,7 @@ const Support = () => {
                 </div>
                 <div className="w-full px-4 xl:px-5">
                   <div className="mb-10">
-                    <label
-                      htmlFor="message"
-                      className="text-white mb-2.5 block font-medium"
-                    >
+                    <label htmlFor="message" className="text-white mb-2.5 block font-medium">
                       Message
                     </label>
                     <textarea

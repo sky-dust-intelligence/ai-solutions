@@ -1,5 +1,5 @@
-"use client";
-import { useEffect, useRef } from "react";
+'use client';
+import { useEffect, useRef } from 'react';
 
 const Highlighter = ({ children }) => {
   const containerRef = useRef(null);
@@ -22,18 +22,18 @@ const Highlighter = ({ children }) => {
     const x = clientX - rect.left;
     const y = clientY - rect.top;
 
-    containerElement.style.setProperty("--mouse-x", `${x}px`);
-    containerElement.style.setProperty("--mouse-y", `${y}px`);
+    containerElement.style.setProperty('--mouse-x', `${x}px`);
+    containerElement.style.setProperty('--mouse-y', `${y}px`);
   };
 
   useEffect(() => {
     initContainer();
-    window.addEventListener("resize", initContainer);
-    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener('resize', initContainer);
+    window.addEventListener('mousemove', onMouseMove);
 
     return () => {
-      window.removeEventListener("resize", initContainer);
-      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener('resize', initContainer);
+      window.removeEventListener('mousemove', onMouseMove);
     };
   }, []);
 

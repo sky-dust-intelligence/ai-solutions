@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const PreviewGeneratedText = ({ generatedContent, height }) => {
   const [copied, setcopied] = useState(false);
@@ -28,13 +28,7 @@ const PreviewGeneratedText = ({ generatedContent, height }) => {
           onClick={copyToClipboard}
           className="mt-9 inline-flex items-center button-border-gradient relative rounded-lg text-white text-sm  gap-1.5 py-3 px-6 shadow-button hover:button-gradient-hover hover:shadow-none"
         >
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14.1501 3.29999L11.5251 0.699988C11.3501 0.524988 11.1001 0.424988 10.8501 0.424988H6.3001C5.5751 0.424988 4.9751 1.02499 4.9751 1.74999V10.875C4.9751 11.6 5.5751 12.2 6.3001 12.2H13.1001C13.8251 12.2 14.4251 11.6 14.4251 10.875V3.97499C14.4251 3.72499 14.3251 3.47499 14.1501 3.29999ZM11.5751 2.34999L12.5251 3.29999H11.5751V2.34999ZM13.1001 11.075H6.3001C6.2001 11.075 6.1001 10.975 6.1001 10.875V1.74999C6.1001 1.64999 6.2001 1.54999 6.3001 1.54999H10.4501V3.84999C10.4501 4.14999 10.7001 4.42499 11.0251 4.42499H13.3001V10.9C13.3001 11 13.2001 11.075 13.1001 11.075Z"
               fill="white"
@@ -52,18 +46,14 @@ const PreviewGeneratedText = ({ generatedContent, height }) => {
               fill="white"
             />
           </svg>
-          {copied ? "Copied" : "Copy"}
+          {copied ? 'Copied' : 'Copy'}
         </button>
       </div>
       <textarea
         className={`bg-dark-7 p-5 border border-white/[0.12] focus:border-white/10 outline-none w-full rounded-lg mt-6 ${
-          height === 442 ? "min-h-[442px]" : "min-h-[262px]"
-        } ${generatedContent ? "text-white" : "cursor-no-drop"}`}
-        value={
-          generatedContent
-            ? generatedContent
-            : "Your generated content will be here"
-        }
+          height === 442 ? 'min-h-[442px]' : 'min-h-[262px]'
+        } ${generatedContent ? 'text-white' : 'cursor-no-drop'}`}
+        value={generatedContent ? generatedContent : 'Your generated content will be here'}
         readOnly
       ></textarea>
     </div>

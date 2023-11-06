@@ -1,12 +1,12 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from '@/components/Breadcrumb';
 
-import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Error | ESG INTELLIGENCE PLATFORM",
-  description: "This is Error page ESG INTELLIGENCE PLATFORM",
+  title: 'Error | ESG INTELLIGENCE PLATFORM',
+  description: 'This is Error page ESG INTELLIGENCE PLATFORM',
   // other metadata
 };
 
@@ -23,12 +23,10 @@ const ErrorPage = () => {
           <div className="relative aspect-[191/143] max-w-[382px] mx-auto w-full mb-12.5">
             <Image src="/images/404.svg" alt="404" fill />
           </div>
-          <h2 className="mb-5.5 text-heading-3 font-bold text-white">
-            Oops! Page Not Found.
-          </h2>
+          <h2 className="mb-5.5 text-heading-3 font-bold text-white">Oops! Page Not Found.</h2>
           <p className="font-medium mb-9">
-            The page you are looking for is not available or has been moved. Try
-            a different page or go to homepage with the button below.
+            The page you are looking for is not available or has been moved. Try a different page or go to homepage with
+            the button below.
           </p>
           <Link
             href="/"

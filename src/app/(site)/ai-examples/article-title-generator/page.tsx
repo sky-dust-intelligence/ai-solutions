@@ -1,17 +1,17 @@
-"use client";
-import React, { useState } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
-import axios from "axios";
-import PreviewGeneratedText from "@/components/AiTools/PreviewGeneratedText";
-import Options from "@/components/AiTools/Options";
+'use client';
+import React, { useState } from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
+import axios from 'axios';
+import PreviewGeneratedText from '@/components/AiTools/PreviewGeneratedText';
+import Options from '@/components/AiTools/Options';
 
 const optionData = [1, 2, 3, 4, 5];
 
 const ArticleTitleGeneratorPage = () => {
-  const [generatedContent, setGeneratedContent] = useState("");
+  const [generatedContent, setGeneratedContent] = useState('');
   const [data, setData] = useState({
-    numberOfWord: "",
-    articleTopic: "",
+    numberOfWord: '',
+    articleTopic: '',
   });
 
   const handleChange = (e) => {
@@ -23,53 +23,51 @@ const ArticleTitleGeneratorPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setGeneratedContent("Loading....");
+    setGeneratedContent('Loading....');
 
     // the prompt
     const prompt = [
       {
-        role: "system",
+        role: 'system',
         content:
-          "You will be provided with the article topic and number of word needed, and your task is to generate multiple article titles.",
+          'You will be provided with the article topic and number of word needed, and your task is to generate multiple article titles.',
       },
       {
-        role: "user",
+        role: 'user',
         content: `Number of words: ${data.numberOfWord} \n Article topic: ${data.articleTopic}`,
       },
     ];
 
     //for the demo
-    const apiKey = localStorage.getItem("apiKey");
+    const apiKey = localStorage.getItem('apiKey');
 
     try {
       const response = await axios.post(
-        "/api/ai-examples",
+        '/api/ai-examples',
         { prompt, apiKey },
         {
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
         },
       );
 
-      const cleanedResponse = response.data.replace(/"/g, "");
+      const cleanedResponse = response.data.replace(/"/g, '');
       setGeneratedContent(cleanedResponse);
     } catch (error) {
-      setGeneratedContent("Please Add the API Key!");
-      console.error("Error:", error.message);
+      setGeneratedContent('Please Add the API Key!');
+      console.error('Error:', error.message);
     }
 
     setData({
-      numberOfWord: "",
-      articleTopic: "",
+      numberOfWord: '',
+      articleTopic: '',
     });
   };
 
   return (
     <>
-      <title>
-        Article Title Generator | AI Tool - Next.js Template for AI Tools
-      </title>
+      <title>Article Title Generator | AI Tool - Next.js Template for AI Tools</title>
       <meta name="description" content="This is AI Examples page for AI Tool" />
       <Breadcrumb pageTitle="Article Title Generator" />
 
@@ -96,8 +94,8 @@ const ArticleTitleGeneratorPage = () => {
 
               <Options
                 values={optionData}
-                title={"Select the Number of Words"}
-                name={"numberOfWord"}
+                title={'Select the Number of Words'}
+                name={'numberOfWord'}
                 handleChange={handleChange}
                 selected={data.numberOfWord}
               />
@@ -107,10 +105,7 @@ const ArticleTitleGeneratorPage = () => {
               </button>
             </form>
           </div>
-          <PreviewGeneratedText
-            generatedContent={generatedContent}
-            height={262}
-          />{" "}
+          <PreviewGeneratedText generatedContent={generatedContent} height={262} />{' '}
         </div>
       </section>
     </>

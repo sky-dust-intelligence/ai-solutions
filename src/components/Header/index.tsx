@@ -1,14 +1,10 @@
-"use client";
-import { signOut, useSession } from "next-auth/react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";import image from nextImage
-
-
-
-
-
+'use client';
+import { signOut, useSession } from 'next-auth/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { image } from './nextImage';
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -28,7 +24,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleStickyMenu);
+    window.addEventListener('scroll', handleStickyMenu);
   });
 
   return (
@@ -36,8 +32,8 @@ const Header = () => {
       <header
         className={`fixed left-0 top-0 w-full z-9999 ${
           stickyMenu
-            ? "bg-dark/70 backdrop-blur-lg shadow !py-4 lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 before:features-row-border"
-            : "py-7 lg:py-0"
+            ? 'bg-dark/70 backdrop-blur-lg shadow !py-4 lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 before:features-row-border'
+            : 'py-7 lg:py-0'
         }`}
       >
         <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 lg:flex items-center justify-between relative">
@@ -45,37 +41,34 @@ const Header = () => {
             <Link href="/">
               <Image src={logo} alt="Logo" width={164} height={36} />
             </Link>
-            <button
-              onClick={() => setNavigationOpen(!navigationOpen)}
-              className="lg:hidden block"
-            >
+            <button onClick={() => setNavigationOpen(!navigationOpen)} className="lg:hidden block">
               <span className="block relative cursor-pointer w-5.5 h-5.5">
                 <span className="du-block absolute right-0 w-full h-full">
                   <span
                     className={`block relative top-0 left-0 bg-white rounded-sm h-0.5 my-1 ease-in-out duration-200 delay-[0] ${
-                      !navigationOpen ? "!w-full delay-300" : "w-0"
+                      !navigationOpen ? '!w-full delay-300' : 'w-0'
                     }`}
                   ></span>
                   <span
                     className={`block relative top-0 left-0 bg-white rounded-sm h-0.5 my-1 ease-in-out duration-200 delay-150 ${
-                      !navigationOpen ? "!w-full delay-400" : "w-0"
+                      !navigationOpen ? '!w-full delay-400' : 'w-0'
                     }`}
                   ></span>
                   <span
                     className={`block relative top-0 left-0 bg-white rounded-sm h-0.5 my-1 ease-in-out duration-200 delay-200 ${
-                      !navigationOpen ? "!w-full delay-500" : "w-0"
+                      !navigationOpen ? '!w-full delay-500' : 'w-0'
                     }`}
                   ></span>
                 </span>
                 <span className="du-block absolute right-0 w-full h-full rotate-45">
                   <span
                     className={`block bg-white rounded-sm ease-in-out duration-200 delay-300 absolute left-2.5 top-0 w-0.5 h-full ${
-                      !navigationOpen ? "!h-0 delay-[0]" : "h-full"
+                      !navigationOpen ? '!h-0 delay-[0]' : 'h-full'
                     }`}
                   ></span>
                   <span
                     className={`block bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-2.5 w-full h-0.5 ${
-                      !navigationOpen ? "!h-0 delay-200" : "h-0.5"
+                      !navigationOpen ? '!h-0 delay-200' : 'h-0.5'
                     }`}
                   ></span>
                 </span>
@@ -86,19 +79,14 @@ const Header = () => {
           <div
             className={`w-full lg:w-3/4 h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${
               navigationOpen
-                ? "!visible bg-light shadow-lg relative !h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5"
-                : ""
+                ? '!visible bg-light shadow-lg relative !h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5'
+                : ''
             }`}
           >
             <nav>
               <ul className="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-2">
                 {menuData.map((menuItem, key) => (
-                  <li
-                    key={key}
-                    className={`nav__menu group relative ${
-                      stickyMenu ? "lg:py-4" : "lg:py-7"
-                    }`}
-                  >
+                  <li key={key} className={`nav__menu group relative ${stickyMenu ? 'lg:py-4' : 'lg:py-7'}`}>
                     {menuItem.submenu ? (
                       <>
                         <DropDown menuItem={menuItem} />
@@ -107,9 +95,7 @@ const Header = () => {
                       <Link
                         href={`${menuItem.path}`}
                         className={`relative text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient ${
-                          pathUrl === menuItem.path
-                            ? "nav-gradient text-dark-blue"
-                            : "text-white/80"
+                          pathUrl === menuItem.path ? 'nav-gradient text-dark-blue' : 'text-white/80'
                         }`}
                       >
                         {menuItem.title}
@@ -134,10 +120,7 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <Link
-                    href="/auth/signin"
-                    className="text-white text-sm hover:text-opacity-75"
-                  >
+                  <Link href="/auth/signin" className="text-white text-sm hover:text-opacity-75">
                     Sign In
                   </Link>
                   <Link

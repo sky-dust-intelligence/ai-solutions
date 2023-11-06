@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 const APIkeyModal = ({ handleModal }) => {
-  const [key, setKey] = useState("");
+  const [key, setKey] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("apiKey", key);
+    localStorage.setItem('apiKey', key);
     handleModal();
   };
 
@@ -18,20 +18,12 @@ const APIkeyModal = ({ handleModal }) => {
           className="absolute top-2 right-2 bg-white/5 p-3 rounded-full hover:bg-white/10 duration-500 "
           onClick={handleModal}
         >
-          <Image
-            src={"/images/ai-tools/icon-4.svg"}
-            width={13}
-            height={13}
-            alt="close icon"
-          />
+          <Image src={'/images/ai-tools/icon-4.svg'} width={13} height={13} alt="close icon" />
         </button>
         <div>
-          <h2 className=" text-2xl md:text-3xl text-white">
-            Enter your OpenAI API Key
-          </h2>
+          <h2 className=" text-2xl md:text-3xl text-white">Enter your OpenAI API Key</h2>
           <p className="pt-4 pb-8">
-            To access the capabilities of AI Tools Template, a valid OpenAI API
-            Key is required.
+            To access the capabilities of AI Tools Template, a valid OpenAI API Key is required.
           </p>
 
           <form onSubmit={handleSubmit} className="flex justify-between gap-3">

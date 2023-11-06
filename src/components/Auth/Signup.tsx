@@ -1,16 +1,16 @@
-"use client";
-import axios from "axios";
-import { signIn } from "next-auth/react";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import toast from "react-hot-toast";
+'use client';
+import axios from 'axios';
+import { signIn } from 'next-auth/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const Signup = () => {
   const [data, setData] = useState({
-    name: "",
-    email: "",
-    password: "",
+    name: '',
+    email: '',
+    password: '',
   });
 
   const { name, email, password } = data;
@@ -19,24 +19,24 @@ const Signup = () => {
     e.preventDefault();
 
     if (!name || !email || !password) {
-      return toast.error("Something went wrong!");
+      return toast.error('Something went wrong!');
     }
 
     axios
-      .post("/api/register", {
+      .post('/api/register', {
         name,
         email,
         password,
       })
       .then(() => {
-        toast.success("User has been registered");
+        toast.success('User has been registered');
         setData({
-          name: "",
-          email: "",
-          password: "",
+          name: '',
+          email: '',
+          password: '',
         });
       })
-      .catch(() => toast.error("Something went wrong"));
+      .catch(() => toast.error('Something went wrong'));
   };
 
   return (
@@ -63,16 +63,10 @@ const Signup = () => {
                   <div>
                     <button
                       aria-label="signup with google"
-                      onClick={() => signIn("google")}
+                      onClick={() => signIn('google')}
                       className="w-full flex items-center justify-center gap-3 p-3.5 font-medium text-white rounded-lg border border-white/[0.12] ease-in duration-300 hover:border-purple"
                     >
-                      <svg
-                        width="23"
-                        height="22"
-                        viewBox="0 0 23 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_132_14584)">
                           <path
                             d="M22.5001 11.2438C22.5134 10.4876 22.4338 9.73256 22.2629 8.995H11.7246V13.0771H17.9105C17.7933 13.7929 17.5296 14.478 17.1352 15.0914C16.7409 15.7047 16.224 16.2335 15.6158 16.646L15.5942 16.7827L18.9264 19.3124L19.1571 19.335C21.2772 17.4161 22.4997 14.5926 22.4997 11.2438"
@@ -93,12 +87,7 @@ const Signup = () => {
                         </g>
                         <defs>
                           <clipPath id="clip0_132_14584">
-                            <rect
-                              width="22"
-                              height="22"
-                              fill="white"
-                              transform="translate(0.5)"
-                            />
+                            <rect width="22" height="22" fill="white" transform="translate(0.5)" />
                           </clipPath>
                         </defs>
                       </svg>
@@ -107,7 +96,7 @@ const Signup = () => {
 
                     <button
                       aria-label="signup with github"
-                      onClick={() => signIn("github")}
+                      onClick={() => signIn('github')}
                       className="mt-4 w-full flex items-center justify-center gap-3 p-3.5 font-medium text-white rounded-lg border border-white/[0.12] ease-in duration-300 hover:border-purple"
                     >
                       <svg
@@ -240,7 +229,7 @@ const Signup = () => {
                     </form>
 
                     <p className="text-center font-medium text-white mt-5">
-                      Already have an account?{" "}
+                      Already have an account?{' '}
                       <Link href="/auth/signin" className="text-purple">
                         Sign in Here
                       </Link>

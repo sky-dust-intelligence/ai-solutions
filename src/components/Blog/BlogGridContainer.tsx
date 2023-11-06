@@ -1,7 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
-import InfiniteScroll from "react-infinite-scroll-component";
-import SingleBlog from "./SingleBlog";
+'use client';
+import { useEffect, useState } from 'react';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import SingleBlog from './SingleBlog';
 
 const BlogGridContainer = ({ blogs }) => {
   const itemToLoad = 5;
@@ -14,10 +14,7 @@ const BlogGridContainer = ({ blogs }) => {
     }, 1500);
   };
   useEffect(() => {
-    if (
-      showBlogs?.length > blogs?.length ||
-      showBlogs?.length === blogs?.length
-    ) {
+    if (showBlogs?.length > blogs?.length || showBlogs?.length === blogs?.length) {
       setHasMore(false);
     }
     if (showBlogs?.length < blogs?.length) {
@@ -32,14 +29,11 @@ const BlogGridContainer = ({ blogs }) => {
           next={fetchMoreData}
           hasMore={hasMore}
           loader={
-            <div className="w-full px-4 text-white col-span-full flex items-center justify-center">
-              Loading...
-            </div>
+            <div className="w-full px-4 text-white col-span-full flex items-center justify-center">Loading...</div>
           }
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12.5 gap-x-7.5"
         >
-          {showBlogs?.length > 0 &&
-            showBlogs?.map((blog) => <SingleBlog key={blog._id} blog={blog} />)}
+          {showBlogs?.length > 0 && showBlogs?.map((blog) => <SingleBlog key={blog._id} blog={blog} />)}
         </InfiniteScroll>
       </div>
     </>

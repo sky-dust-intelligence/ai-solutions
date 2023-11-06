@@ -1,7 +1,7 @@
-import { imageBuilder } from "@/sanity/sanity-utils";
-import { Blog } from "@/types/blog";
-import Image from "next/image";
-import Link from "next/link";
+import { imageBuilder } from '@/sanity/sanity-utils';
+import { Blog } from '@/types/blog';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
   const { title, mainImage, slug, metadata, author, tags, publishedAt } = blog;
@@ -36,9 +36,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           {`${title.slice(0, 44)}...`}
         </Link>
       </h4>
-      <p className="font-medium mt-4">
-        {`${metadata && metadata.slice(0, 130)}...`}
-      </p>
+      <p className="font-medium mt-4">{`${metadata && metadata.slice(0, 130)}...`}</p>
 
       <div className="flex items-center gap-4.5 flex-wrap mt-6">
         <div className="flex items-center gap-2 flex-wrap cursor-pointer ease-in duration-300 hover:text-white">
@@ -78,12 +76,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           </svg>
 
           <span className="text-sm font-medium">
-            {publishedAt &&
-              new Date(publishedAt)
-                .toDateString()
-                .split(" ")
-                .slice(1)
-                .join(" ")}
+            {publishedAt && new Date(publishedAt).toDateString().split(' ').slice(1).join(' ')}
           </span>
         </div>
       </div>

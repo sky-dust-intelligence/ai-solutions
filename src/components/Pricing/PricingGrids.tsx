@@ -1,8 +1,8 @@
-"use client";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
-import SinglePricing from "./SInglePricing";
+'use client';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import SectionTitle from '../Common/SectionTitle';
+import SinglePricing from './SInglePricing';
 
 const PricingGrids = () => {
   const [prices, setPrices] = useState([]);
@@ -12,7 +12,7 @@ const PricingGrids = () => {
   }, []);
 
   const fetchPrices = async () => {
-    const { data } = await axios.get("/api/getproducts");
+    const { data } = await axios.get('/api/getproducts');
     setPrices(data);
   };
   return (
@@ -24,10 +24,7 @@ const PricingGrids = () => {
           paragraph="Build SaaS AI applications using OpenAI and Next.js, this kit comes with pre-configured and pre-built examples, making it easier to quickly kickstart your AI startup."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
-          {prices &&
-            prices.map((price, key) => (
-              <SinglePricing price={price} key={key} />
-            ))}
+          {prices && prices.map((price, key) => <SinglePricing price={price} key={key} />)}
         </div>
       </div>
     </div>

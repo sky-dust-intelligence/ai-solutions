@@ -16,19 +16,13 @@ const SingleFaq = ({ faqData }: { faqData: FaqData }) => {
           handleFaqToggle(id);
         }}
         className={`cursor-pointer flex justify-between items-center font-semibold text-[22px] leading-[28px] py-5 lg:py-7 ${
-          activeFaq === id ? "text-white" : ""
+          activeFaq === id ? 'text-white' : ''
         }`}
       >
         {question}
         <span>
           {activeFaq === id ? (
-            <svg
-              width="22"
-              height="2"
-              viewBox="0 0 22 2"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.125 1.86263H0.875012C0.425012 1.86263 0.0125122 1.48763 0.0125122 1.00013C0.0125122 0.550134 0.387512 0.137634 0.875012 0.137634H21.125C21.575 0.137634 21.9875 0.512634 21.9875 1.00013C21.9875 1.45013 21.575 1.86263 21.125 1.86263Z"
                 fill="white"
@@ -54,8 +48,8 @@ const SingleFaq = ({ faqData }: { faqData: FaqData }) => {
       <div
         className={`grid text-base text-body-color dark:text-body-color-dark`}
         style={{
-          gridTemplateRows: `${activeFaq === id ? "1fr" : "0fr"}`,
-          transition: "grid-template-rows 300ms",
+          gridTemplateRows: `${activeFaq === id ? '1fr' : '0fr'}`,
+          transition: 'grid-template-rows 300ms',
         }}
       >
         <div className={`overflow-hidden transition-all duration-300`}>

@@ -1,6 +1,6 @@
-import React from "react";
-import exampleData from "./examplesData";
-import SingleExample from "./SingleExample";
+import React from 'react';
+import exampleData from './examplesData';
+import SingleExample from './SingleExample';
 
 const AiToolExample = () => {
   return (

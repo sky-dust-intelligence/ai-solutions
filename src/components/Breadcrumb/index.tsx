@@ -15,9 +15,7 @@ const Breadcrumb = ({ pageTitle }: { pageTitle: string }) => {
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-dark/0 to-dark -z-1"></div>
 
       <div className="text-center px-4">
-        <h1 className="font-extrabold text-heading-2 text-white mb-5.5">
-          {pageTitle}
-        </h1>
+        <h1 className="font-extrabold text-heading-2 text-white mb-5.5">{pageTitle}</h1>
         <ul className="flex items-center justify-center gap-2">
           <li className="font-medium">
             <a href="index.html">Home</a>

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import SectionTitle from "@/components/Common/SectionTitle";
-import { useEffect, useState } from "react";
-import SingleReview from "./SingleReview";
-import reviewsData from "./reviewsData";
+import SectionTitle from '@/components/Common/SectionTitle';
+import { useEffect, useState } from 'react';
+import SingleReview from './SingleReview';
+import reviewsData from './reviewsData';
 
 const Reviews = () => {
   const [showContent, setShowContent] = useState(false);
@@ -18,7 +18,7 @@ const Reviews = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScrollContent);
+    window.addEventListener('scroll', handleScrollContent);
   });
 
   return (
@@ -32,7 +32,7 @@ const Reviews = () => {
 
         <div
           className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5 ${
-            !showContent ? "max-h-[855px] overflow-hidden" : ""
+            !showContent ? 'max-h-[855px] overflow-hidden' : ''
           }`}
         >
           <div className="space-y-7.5">
@@ -56,21 +56,17 @@ const Reviews = () => {
 
         <div
           className={`inset-x-0 bottom-20 flex justify-center bg-gradient-to-t from-dark pt-32 pb-8 pointer-events-none absolute ${
-            scrollContent ? "!opacity-100" : ""
-          } ${
-            showContent
-              ? "sticky -u-mt-52 transition-opacity duration-300 opacity-0"
-              : ""
-          }`}
+            scrollContent ? '!opacity-100' : ''
+          } ${showContent ? 'sticky -u-mt-52 transition-opacity duration-300 opacity-0' : ''}`}
         >
           <button
             type="button"
             onClick={() => setShowContent(!showContent)}
             className={`button-border-gradient hover:button-gradient-hover relative top-20 text-sm text-white font-semibold px-4.5 py-3 rounded-lg pointer-events-auto flex mx-auto -mt-7.5 ease-in duration-300 ${
-              showContent ? "transition-transform translate-y-4" : ""
-            } ${scrollContent ? "translate-y-0" : ""}`}
+              showContent ? 'transition-transform translate-y-4' : ''
+            } ${scrollContent ? 'translate-y-0' : ''}`}
           >
-            {showContent ? "Okay, I get the point" : "Show more..."}
+            {showContent ? 'Okay, I get the point' : 'Show more...'}
           </button>
         </div>
       </div>

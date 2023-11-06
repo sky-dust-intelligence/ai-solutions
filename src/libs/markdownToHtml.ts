@@ -1,8 +1,8 @@
-import fs from "fs";
-import matter from "gray-matter";
-import { join } from "path";
-import { remark } from "remark";
-import html from "remark-html";
+import fs from 'fs';
+import matter from 'gray-matter';
+import { join } from 'path';
+import { remark } from 'remark';
+import html from 'remark-html';
 
 export default async function markdownToHtml(markdown: string) {
   const result = await remark().use(html).process(markdown);
@@ -11,23 +11,23 @@ export default async function markdownToHtml(markdown: string) {
 
 export function getPostBySlug(slug, fields = [], dirName) {
   const postsDirectory = join(process.cwd(), `./markdown/${dirName}`);
-  const realSlug = slug.replace(/\.mdx$/, "");
+  const realSlug = slug.replace(/\.mdx$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.mdx`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
   const items = {};
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
-    if (field === "slug") {
+    if (field === 'slug') {
       items[field] = realSlug;
     }
-    if (field === "content") {
+    if (field === 'content') {
       items[field] = content;
     }
 
-    if (typeof data[field] !== "undefined") {
+    if (typeof data[field] !== 'undefined') {
       items[field] = data[field];
     }
   });

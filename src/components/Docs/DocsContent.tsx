@@ -1,6 +1,6 @@
-"use client";
-import Prism from "prismjs";
-import { useEffect, useRef } from "react";
+'use client';
+import Prism from 'prismjs';
+import { useEffect, useRef } from 'react';
 
 const DocsContent = ({ content }) => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const DocsContent = ({ content }) => {
 
   const rootRef = useRef(null);
   useEffect(() => {
-    const allPres = rootRef.current.querySelectorAll("pre");
+    const allPres = rootRef.current.querySelectorAll('pre');
 
     for (const pre of allPres) {
       const code = pre.firstElementChild;
@@ -26,29 +26,26 @@ const DocsContent = ({ content }) => {
 
   return (
     <div ref={rootRef}>
-      <div
-        className="blog-details"
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <div className="blog-details" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 };
 export default DocsContent;
 
 function createCopyButton(codeEl) {
-  const button = document.createElement("button");
-  button.classList.add("prism-copy-button");
-  button.textContent = "Copy";
+  const button = document.createElement('button');
+  button.classList.add('prism-copy-button');
+  button.textContent = 'Copy';
 
-  button.addEventListener("click", () => {
-    if (button.textContent === "Copied") {
+  button.addEventListener('click', () => {
+    if (button.textContent === 'Copied') {
       return;
     }
-    navigator.clipboard.writeText(codeEl.textContent || "");
-    button.textContent = "Copied";
+    navigator.clipboard.writeText(codeEl.textContent || '');
+    button.textContent = 'Copied';
     button.disabled = true;
     setTimeout(() => {
-      button.textContent = "Copy";
+      button.textContent = 'Copy';
       button.disabled = false;
     }, 3000);
   });

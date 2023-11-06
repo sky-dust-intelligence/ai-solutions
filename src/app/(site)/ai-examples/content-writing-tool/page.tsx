@@ -1,19 +1,19 @@
-"use client";
-import React, { useState } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
-import axios from "axios";
-import PreviewGeneratedText from "@/components/AiTools/PreviewGeneratedText";
-import Options from "@/components/AiTools/Options";
+'use client';
+import React, { useState } from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
+import axios from 'axios';
+import PreviewGeneratedText from '@/components/AiTools/PreviewGeneratedText';
+import Options from '@/components/AiTools/Options';
 
 const paragraphsCount = [1, 2, 3, 4, 5];
-const contentTypes = ["Article", "Listicles", "How to guides", "Tweet"];
+const contentTypes = ['Article', 'Listicles', 'How to guides', 'Tweet'];
 
 const ContentGeneratorPage = () => {
-  const [generatedContent, setGeneratedContent] = useState("");
+  const [generatedContent, setGeneratedContent] = useState('');
   const [data, setData] = useState({
-    contentTopic: "",
-    numberOfParagraphs: "",
-    contentType: "",
+    contentTopic: '',
+    numberOfParagraphs: '',
+    contentType: '',
   });
 
   const handleChange = (e) => {
@@ -25,50 +25,49 @@ const ContentGeneratorPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setGeneratedContent("Loading....");
+    setGeneratedContent('Loading....');
 
     // the prompt
     const prompt = [
       {
-        role: "system",
+        role: 'system',
         content:
-          "You will be provided with the content topic and the number of paragraphs and the content type. Your task is to generate the content with the exact paragraphs number \n",
+          'You will be provided with the content topic and the number of paragraphs and the content type. Your task is to generate the content with the exact paragraphs number \n',
       },
       {
-        role: "user",
+        role: 'user',
         content: `Content Topic: ${data.contentTopic} \nNumber of Paragraphs: ${data.numberOfParagraphs} \nContent-Type: ${data.contentType}`,
       },
       {
-        role: "user",
-        content:
-          "Remove all the paragraph title and add line break after each paragraph",
+        role: 'user',
+        content: 'Remove all the paragraph title and add line break after each paragraph',
       },
     ];
 
     //for the demo
-    const apiKey = localStorage.getItem("apiKey");
+    const apiKey = localStorage.getItem('apiKey');
 
     try {
       const response = await axios.post(
-        "/api/ai-examples",
+        '/api/ai-examples',
         { apiKey, prompt },
         {
           headers: {
-            "Content-Type": "application/json", // Adjust headers as needed
+            'Content-Type': 'application/json', // Adjust headers as needed
           },
         },
       );
       setGeneratedContent(response.data);
       console.log(response.data);
     } catch (error) {
-      setGeneratedContent("Please Add the API Key!");
-      console.error("Error:", error.message);
+      setGeneratedContent('Please Add the API Key!');
+      console.error('Error:', error.message);
     }
 
     setData({
-      contentTopic: "",
-      numberOfParagraphs: "",
-      contentType: "",
+      contentTopic: '',
+      numberOfParagraphs: '',
+      contentType: '',
     });
   };
 
@@ -92,9 +91,7 @@ const ContentGeneratorPage = () => {
 
         <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 grid lg:grid-cols-12 gap-8">
           <div className="lg:col-span-4 p-8 bg-dark-8 gradient-box rounded-lg">
-            <h2 className="text-white font-bold text-2xl pb-2">
-              Content Topic
-            </h2>
+            <h2 className="text-white font-bold text-2xl pb-2">Content Topic</h2>
             <p className="pb-6">What your content will be about?</p>
             <form onSubmit={handleSubmit}>
               <textarea
@@ -108,16 +105,16 @@ const ContentGeneratorPage = () => {
 
               <Options
                 values={paragraphsCount}
-                title={"Number of Paragraphs"}
-                name={"numberOfParagraphs"}
+                title={'Number of Paragraphs'}
+                name={'numberOfParagraphs'}
                 handleChange={handleChange}
                 selected={data.numberOfParagraphs}
               />
 
               <Options
                 values={contentTypes}
-                title={"Select Type"}
-                name={"contentType"}
+                title={'Select Type'}
+                name={'contentType'}
                 handleChange={handleChange}
                 selected={data.contentType}
               />
@@ -131,10 +128,7 @@ const ContentGeneratorPage = () => {
             </form>
           </div>
 
-          <PreviewGeneratedText
-            generatedContent={generatedContent}
-            height={442}
-          />
+          <PreviewGeneratedText generatedContent={generatedContent} height={442} />
         </div>
       </section>
     </>
