@@ -2931,11 +2931,11 @@ __metadata:
   linkType: hard
 
 "@types/esprima@npm:^4":
-  version: 4.0.5
-  resolution: "@types/esprima@npm:4.0.5"
+  version: 4.0.6
+  resolution: "@types/esprima@npm:4.0.6"
   dependencies:
     "@types/estree": "npm:*"
-  checksum: f2a44dbe0e600eb13b5588a712454117f11153d17e9dfddb4fb2590672b4815ba3712da3acd48db84e7def2ae74e0ba21e7c422fa4dc1085b3e0a1c792f2724f
+  checksum: 58544b9a2a017b9efdb4fafd4b7b1bc49bd1e555ad78a53acc5ef3de9ec208e43d29470d1cd24f2e86bf75605303aab47f4dbf3a1528018fda1e93a23d532edc
   languageName: node
   linkType: hard
 
