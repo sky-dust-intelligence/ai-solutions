@@ -2996,11 +2996,11 @@ __metadata:
   linkType: hard
 
 "@types/gulp-stylint@npm:^4.0.5":
-  version: 4.0.5
-  resolution: "@types/gulp-stylint@npm:4.0.5"
+  version: 4.0.6
+  resolution: "@types/gulp-stylint@npm:4.0.6"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 58e755bcbff3620afdcb95e86ef1d8cf551d78468607f33675a49b5a899f26e56848ee045e21742c85f9a63ee16996d472a08d14bf82a743a4cd79ad6a2c759f
+  checksum: 928803ef8c53cf4196675a6cc375e790fa2c703ec783c0e74d35bb22d43cbf3a4bf3a1290702002ec62a6466229b837fe32c954e0ba5b30e92e44b20336927db
   languageName: node
   linkType: hard
 
