@@ -3112,15 +3112,15 @@ __metadata:
   linkType: hard
 
 "@types/next-pwa@npm:^5":
-  version: 5.6.8
-  resolution: "@types/next-pwa@npm:5.6.8"
+  version: 5.6.9
+  resolution: "@types/next-pwa@npm:5.6.9"
   dependencies:
     "@types/node": "npm:*"
     "@types/react": "npm:*"
     "@types/react-dom": "npm:*"
     next: "npm:^12.2.5 || ^13.0.0"
     workbox-build: "npm:^6.5.4"
-  checksum: ce75162860e9f8962e878096ce1aa85e7f6dde577b62cb3e1998fe4788f207fcf81095de22ad398f2104ea73b45665f9adfa87f9ceebc0b64d6ed5a6f1beb47c
+  checksum: 76cff13e56d7b3c20b28dca2b3f347067095984eb8888a5cbb43b0d5f6809ec3d53a2ac3f42fdd145e19894145c9041c32f7b9fb5e0c2e4ac03731a2de2f0192
   languageName: node
   linkType: hard
 
