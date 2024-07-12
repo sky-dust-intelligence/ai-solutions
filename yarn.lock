@@ -3246,13 +3246,13 @@ __metadata:
   linkType: hard
 
 "@types/remark-prism@npm:^1.3.4":
-  version: 1.3.6
-  resolution: "@types/remark-prism@npm:1.3.6"
+  version: 1.3.7
+  resolution: "@types/remark-prism@npm:1.3.7"
   dependencies:
     "@types/mdast": "npm:*"
     remark: "npm:^14.0.2"
     unified: "npm:^10.0.0"
-  checksum: 77e76e66aa27b8ed7ea16ccea004d4458a437018d9e49f314cb4034cd5583c604767b0db94becce8f9c34d91cd027665fd83888d9d9d83010aab5e26441524a4
+  checksum: 8cb9c4e9f4c07b8861b45fbbb3f82d256f4de7613fc2ff93d4ca2eaee8a2a9bd68254947430ada35ec7317c2af987f9267a365fc99ca2cb79443167c8dfd2581
   languageName: node
   linkType: hard
 
