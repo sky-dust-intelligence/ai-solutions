@@ -2977,11 +2977,11 @@ __metadata:
   linkType: hard
 
 "@types/fslightbox-react@npm:^1.7.3":
-  version: 1.7.5
-  resolution: "@types/fslightbox-react@npm:1.7.5"
+  version: 1.8.0
+  resolution: "@types/fslightbox-react@npm:1.8.0"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 9d7d2362d448c90876301d7e5f1fc1d594f769baeb1cf720658f1652bd2fc8f1a2d7451fa13fab883a03dba3797050e72987019dc9206c0885b002682d12fbc0
+  checksum: 3a208437e273808be0e097fc14adb18f907ed45bf67d962ec286e9ec76b82f7fdf4da4eb199e52e7e3dc9f73d4befda0113ade4329f5f932f40420db3c0fd37e
   languageName: node
   linkType: hard
 
@@ -7924,13 +7924,13 @@ __metadata:
   linkType: hard
 
 "fslightbox-react@npm:^1.7.6":
-  version: 1.7.6
-  resolution: "fslightbox-react@npm:1.7.6"
+  version: 1.8.0
+  resolution: "fslightbox-react@npm:1.8.0"
   peerDependencies:
     prop-types: ">=15.6.2"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 24e8c3915b9d7a4f250586e357661ebe6b120d3233ba79f36e54c6434730c9d823edd9eaa91fa9b6eb87e4214204375f005afb63cdfa15fe5389fe79303f42a2
+  checksum: a14b86727a912ce394bbf20c8187d5d2318b1b18b82a8ffd91591726874fd812723f09c06aa8573077be6b56d2b1ccfe0fd49db47e262b49c2bcef354db4ccc2
   languageName: node
   linkType: hard
 
