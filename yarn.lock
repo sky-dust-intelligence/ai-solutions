@@ -3854,7 +3854,7 @@ __metadata:
     stylelint: "npm:^15.11.0"
     stylelint-config-recommended: "npm:^13.0.0"
     stylelint-config-standard: "npm:^34.0.0"
-    swiper: "npm:^10.1.0"
+    swiper: "npm:^12.0.0"
     tailwind: "npm:^4.0.0"
     tailwindcss: "npm:^3.3.5"
     ts-node: "npm:^10.9.1"
@@ -15642,10 +15642,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swiper@npm:^10.1.0":
-  version: 10.3.1
-  resolution: "swiper@npm:10.3.1"
-  checksum: 1e9ad5480cbf451d99fab280553d5105eb314f381d98610771f0808cac03962d87967a190696686d62bce8e4ebcbf34962c369f9d502b34fef1582ced17f6f98
+"swiper@npm:^12.0.0":
+  version: 12.2.0
+  resolution: "swiper@npm:12.2.0"
+  checksum: 459c9621e170130c0a6874b05e24fefd0411529600a17b2d8afc4987dc2e803ab18d42983081b723423819d464568fdb541b6c3f517e558c60888c644dc4ead1
   languageName: node
   linkType: hard
 
